@@ -285,7 +285,7 @@ function base_fidget:show(offset)
 
   win_set_local_options(self.winid, {
     winblend = options.window.blend,
-    winhighlight = "Normal:FidgetTask",
+    winhighlight = "NormalNC:FidgetTask",
   })
   self.lines = splits_on_newlines(self.lines) -- handle lines that might contain a "\n" character
   pcall(api.nvim_buf_set_lines, self.bufid, 0, height, false, self.lines)
